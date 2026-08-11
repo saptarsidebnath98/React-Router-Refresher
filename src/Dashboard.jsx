@@ -1,11 +1,12 @@
-import { Outlet } from 'react-router'
+import {  Outlet } from 'react-router'
 import './App.css'
+import Navbar from './components/Navbar'
 
 function Dashboard() {
 
   return (
     <>
-      <h2>This is the DASHBOARD file</h2>
+      <Navbar/>
       <Outlet/>
     </>
   )
