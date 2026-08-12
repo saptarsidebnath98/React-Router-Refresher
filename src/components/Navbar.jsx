@@ -5,13 +5,14 @@ const Navbar = () => {
         <div className="navbar">
             <h2>Phase 4 Practice</h2>
             <div>
-                <NavLink to="/" className="navLinks">Home</NavLink>
-                <NavLink to="/settings" className="navLinks">Settings</NavLink>
-                <NavLink to="/settings/innersettings2" className="navLinks">InnerSettings2</NavLink>
+                <Link to="/" className="navLinks">Home</Link>
+                <Link to="/settings" className="navLinks">Settings</Link>
+                <Link to="/settings/innersettings2" className="navLinks">InnerSettings2</Link>
                 
                 <NavLink to="/about" className={({isActive}) => isActive ? "active" : "navLinks"}>About</NavLink>
-                <NavLink to="/product/1000/headphone" className="navLinks">Product</NavLink>
-                <NavLink to="/file/thefilepath/theextraone/theexceptpath" className="navLinks">File</NavLink>
+                <Link to="/product/1000/headphone" className="navLinks">Product</Link>
+                <Link to="/file/thefilepath/theextraone/theexceptpath" className="navLinks">File</Link>
+                <Link to="/searchparams?type=grocery" className="navLinks">SeachParams Usage</Link>
             </div>
 
         </div>

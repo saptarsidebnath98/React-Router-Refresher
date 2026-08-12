@@ -10,6 +10,7 @@ import InnerSettings1 from './components/InnerSettings1.jsx';
 import About from './components/About.jsx';
 import Product from './components/Product.jsx';
 import File from './components/File.jsx';
+import SearchParams from './components/SearchParams.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -29,7 +30,7 @@ createRoot(document.getElementById('root')).render(
           </Route>
 
           <Route path='file/*' element={<File />} />
-
+          <Route path='searchparams' element={<SearchParams/>}/>
         </Route>
       </Routes>
 
